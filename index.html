@@ -1,149 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website Keren untuk Hosting">
-    <meta name="author" content="Sazuu">
-    <title>Website Keren</title>
-    <style>
-        /* Reset dasar */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(to bottom, #1a1a2e, #16213e);
-            color: #f5f5f5;
-        }
-
-        header {
-            background: #0f3460;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1rem;
-            color: #ccc;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 4rem 1rem;
-        }
-
-        .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #e94560;
-            color: #fff;
-            text-decoration: none;
-            padding: 0.8rem 2rem;
-            border-radius: 25px;
-            transition: background 0.3s ease-in-out;
-        }
-
-        .btn:hover {
-            background: #f05d7a;
-        }
-
-        .features {
-            display: flex;
-            justify-content: space-around;
-            padding: 2rem 1rem;
-            flex-wrap: wrap;
-        }
-
-        .feature {
-            background: #1a1a2e;
-            padding: 1.5rem;
-            margin: 1rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            width: 300px;
-        }
-
-        .feature h3 {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .feature p {
-            font-size: 1rem;
-            color: #bbb;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #0f3460;
-            color: #ccc;
-            margin-top: 2rem;
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: #e94560;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="breakpoint.css" />
+    <title>My Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Website Hosting Keren</h1>
-        <p>Tempat sempurna untuk memulai perjalanan online Anda</p>
+    <header class="header">
+        <a href="#" class="logo">Lunatic's<span>Stresser.</span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="shop&pay.html">Shop & List Pay</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <section class="hero">
-        <h2>Selamat Datang di Website Keren!</h2>
-        <p>Kami menyediakan layanan hosting terbaik dengan desain modern dan fitur lengkap untuk memenuhi kebutuhan Anda.</p>
-        <a href="#features" class="btn">Jelajahi Fitur</a>
-    </section>
-
-    <section id="features" class="features">
-        <div class="feature">
-            <h3>Kecepatan Tinggi</h3>
-            <p>Server kami dirancang untuk memastikan situs Anda selalu cepat dan responsif.</p>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>S4zu Development</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <div class="social-media">
+                <a href="takde"><i class="bx bxl-facebook"></i></a>
+                <a href="https://wa.me/6283870750350"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://github.com/s4zu"><i class="bx bxl-github"></i></a>
+                <a href="https://t.me/JasaSuspen"><i class="bx bxl-telegram"></i></a>
+            </div>
+            <a href="https://wa.me/6283870750350" class="btn">Contact Me</a>
         </div>
-        <div class="feature">
-            <h3>Keamanan Terbaik</h3>
-            <p>Data Anda aman dengan teknologi enkripsi terbaru dan perlindungan dari ancaman siber.</p>
-        </div>
-        <div class="feature">
-            <h3>Dukungan 24/7</h3>
-            <p>Tim dukungan kami selalu siap membantu kapan pun Anda membutuhkan.</p>
+        <div class="home-img">
+            <img src="asset/home1.png" alt="home" />
         </div>
     </section>
 
-    <footer>
-        <p>© 2024 Website Keren. Dibuat dengan ❤️ oleh <a href="https://github.com/sazuu" target="_blank">Sazuu</a></p>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="asset/about1.png" alt="about" />
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>
+                Innovative Freelance Development Script Years at Upwork
+                Seeking New Challenges | Bachelor of Informatics Grad | Proficient in
+                HTML, CSS, JS, Node.js | Eager to
+                Bring Problem-Solving and Critical Thinking Skills to Your Team.
+            </p>
+            <a href="https://wa.me/6285608542790" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Front End</h3>
+                <p>
+                    and likewise with fort end I still need to learn a lot
+                    ratione.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Graphic Design</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                    fugiat quaerat vero magnam? Sunt exercitationem atque distinctio
+                    deleniti culpa minus.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-data"></i>
+                <h3>Back End</h3>
+                <p>
+                    I'm still learning the backend a little bit
+                    ratione.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>MY CHAR FAV</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="asset/img2.png" alt="portfolio" />
+                <div class="portfolio-layer">
+                    <h4>CHAR FAV</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Provident, nihil.
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="asset/img2.png" alt="portfolio" />
+                <div class="portfolio-layer">
+                    <h4>CHAR FAV</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit,
+                        dignissimos.
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="asset/img4.png" alt="portfolio" />
+                <div class="portfolio-layer">
+                    <h4>CHAR FAV</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusamus, sequi!
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="asset/img4.png" alt="portfolio" />
+                <div class="portfolio-layer">
+                    <h4>CHAR FAV</h4>
+                    <p>
+                        This is my favorite Genshin character, namely Furina, she is Furina AI who can help with everyday life
+                        nulla?
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="asset/img6.png" alt="portfolio" />
+                <div class="portfolio-layer">
+                    <h4>CHAR FAV</h4>
+                    <p>
+                        This is my favorite Genshin character, Furina
+                        cum!
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="asset/img6.png" alt="portfolio" />
+                <div class="portfolio-layer">
+                    <h4>CHAR FAV</h4>
+                    <p>
+                        This is my favorite Genshin character, Furina
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="lunaticsstresser@gmail.com">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" />
+                <input type="email" placeholder="Email Address" />
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" />
+                <input type="text" placeholder="Email Subject" />
+            </div>
+            <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+            ></textarea>
+            <input type="submit" value="Send Message" class="btn" />
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright © 2024 by S4zu Development | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
     </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src=" main.js"></script>
 </body>
-     </html>
-     
+                                    </html>
