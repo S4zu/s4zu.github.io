@@ -1,0 +1,74 @@
+css
+* Reset CSS *
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+* Chatbot *
+chatbot {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  height: 400px;
+  background-color: fff;
+  border: 1px solid ccc;
+  z-index: 10;
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: 333;
+  color: fff;
+}
+
+.chatbot-header span {
+  font-size: 18px;
+}
+
+.close-chatbot {
+  cursor: pointer;
+}
+
+.chatbot-body {
+  overflow: auto;
+  height: 300px;
+}
+
+.user-message, .ai-message {
+  padding: 10px;
+  margin: 10px 0;
+  width: calc(100% - 20px);
+}
+
+.user-message {
+  background-color: eee;
+  float: right;
+  clear: both;
+}
+
+.ai-message {
+  background-color: ccc;
+  float: left;
+  clear: both;
+}
+
+.chatbot-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.chatbot-footer input {
+  width: 100%;
+}
